@@ -1,0 +1,110 @@
+:root {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2f1d1d;
+  background: #f9f2ea;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff7f1, #f3e5d8);
+}
+
+button {
+  font: inherit;
+}
+
+.invitation-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.card-wrap {
+  width: min(100%, 900px);
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(160, 120, 90, 0.2);
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(78, 42, 27, 0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.invite-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #f7f0eb;
+}
+
+.invite-text {
+  background: #fffaf6;
+  padding: 48px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.small-tag {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #8d6d5a;
+  margin-bottom: 12px;
+}
+
+.invite-text h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  line-height: 1.1;
+  color: #4a2f2a;
+}
+
+.date,
+.time,
+.venue {
+  margin: 8px 0;
+  color: #5a4038;
+  font-size: 1.05rem;
+}
+
+button {
+  margin-top: 22px;
+  background: #8b5f4c;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(139, 95, 76, 0.18);
+}
+
+@media (max-width: 760px) {
+  .card-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .invite-text {
+    padding: 32px 20px;
+  }
+}

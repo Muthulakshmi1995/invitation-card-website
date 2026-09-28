@@ -1,0 +1,211 @@
+.wedding-cards-page {
+  min-height: 100vh;
+
+  background: #e6e6fa;
+
+  color: #111;
+
+  font-family: Poppins, Arial, sans-serif;
+}
+
+
+.wedding-cards-section {
+  padding: 55px 5% 75px;
+}
+
+
+.wedding-cards-section h1 {
+  text-align: center;
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  margin: 0 0 70px;
+}
+
+
+.wedding-products-grid {
+  max-width: 1060px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  column-gap: 80px;
+
+  row-gap: 70px;
+}
+
+
+.wedding-product-card {
+  background: #fffef0;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 5px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.wedding-product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 9px 16px rgba(0, 0, 0, 0.22);
+}
+
+
+.wedding-product-image {
+  height: 370px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+}
+
+
+.wedding-product-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.wedding-product-card:hover
+.wedding-product-image img {
+  transform: scale(1.03);
+}
+
+
+.wedding-product-info {
+  padding: 8px 15px 17px;
+}
+
+
+.wedding-product-info h2 {
+  min-height: 76px;
+
+  margin: 0;
+
+  font-size: 18px;
+
+  line-height: 1.55;
+
+  font-weight: 700;
+}
+
+
+.wedding-product-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 7px;
+}
+
+
+.wedding-product-bottom strong {
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+.wedding-product-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.wedding-product-actions button {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  font-size: 37px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  color: #111;
+
+  transition:
+    transform 0.2s ease;
+}
+
+
+.wedding-product-actions button:hover {
+  transform: scale(1.12);
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .wedding-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 35px;
+
+    row-gap: 45px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .wedding-cards-section {
+    padding: 40px 18px 55px;
+  }
+
+  .wedding-cards-section h1 {
+    font-size: 25px;
+
+    margin-bottom: 40px;
+  }
+
+  .wedding-products-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .wedding-product-image {
+    height: 330px;
+  }
+
+  .wedding-product-info h2 {
+    font-size: 16px;
+  }
+
+}
